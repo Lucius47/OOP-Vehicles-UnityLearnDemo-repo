@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.AI;
 
-public class Tank : Vehicle
+public class Tank : Vehicle // INHERITANCE
 {
     private NavMeshAgent _agent;
 
@@ -16,10 +16,10 @@ public class Tank : Vehicle
         _agent.SetDestination(target);
     }
 
-    protected override void Update()
+    protected override void Update() // POLYMORPHISM
     {
         base.Update();
-        Move(TargetPosition);
+        Move(TargetPosition);// ABSTRACTION
     }
     
     private void OnGUI()

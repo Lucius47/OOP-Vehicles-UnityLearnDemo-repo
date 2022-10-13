@@ -1,7 +1,7 @@
 using System.Collections;
 using UnityEngine;
 
-public class Helicopter : Vehicle
+public class Helicopter : Vehicle // INHERITANCE
 {
     [SerializeField] private Transform _mainRotor;
     [SerializeField] private float turningSpeed = 10;
@@ -14,7 +14,7 @@ public class Helicopter : Vehicle
 
     private State _currentState;
 
-    protected override void Update()
+    protected override void Update() // POLYMORPHISM
     {
         base.Update();
 

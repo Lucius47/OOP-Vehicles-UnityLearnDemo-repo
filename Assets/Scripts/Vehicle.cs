@@ -6,7 +6,7 @@ public abstract class Vehicle : MonoBehaviour
     [SerializeField] protected bool isUserControlled;
     protected Vector3 TargetPosition;
 
-    protected float EnginePower
+    protected float EnginePower // ENCAPSULATION
     {
         get => enginePower;
         set
